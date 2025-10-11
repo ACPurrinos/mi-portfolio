@@ -10,3 +10,7 @@
 .text-center {
   text-align: center;
 }
+
+section {
+  scroll-margin-top: 7rem; /* ajusta según el alto de tu header */
+}

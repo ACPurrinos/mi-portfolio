@@ -6,6 +6,9 @@
     <title>Document</title>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
 
     <!--
     <link rel="stylesheet" href="css/styles.css">
@@ -66,7 +69,7 @@
 <section id="inicio" class="hero hero--light">
   <div class="hero__content">
     <h1 class="hero__title">
-      <span class="typing">HOLA, SOY <span class="highlight">ANDREA!</span></span>
+      <span class="typing">HOLA, SOY <span class="highlight">ANDREA</span></span>
       <span class="cursor"></span>
     </h1>
 
@@ -118,14 +121,51 @@ public class Portfolio {
   </div>
 </section>
 -->
-
-
+<!--
    <section id="sobre-mi" class="section--about">
   <div class="section__container">
     <h2 class="section__title">SOBRE MÍ</h2>
     <p class="section__text">
       Soy <span class="highlight">Andrea</span>, una desarrolladora de software junior apasionada por el <span class="highlight">BackEnd</span>. Me encanta crear soluciones eficientes, aprender nuevas tecnologías y enfrentar retos de programación.
     </p>
+-->
+    <section id="sobre-mi" class="section--about">
+  <div class="section__container">
+    <h2 class="section__title">SOBRE MÍ</h2>
+
+    <div class="about__cards">
+      <!-- Card 1: Quién soy -->
+      <div class="about__card">
+        <h3 class="about__subtitle">Quién soy</h3>
+        <p class="about__text">
+          Soy <span class="highlight">Andrea</span>, una <span class="highlight">Desarrolladora de Software Junior</span>. Tras varios años de experiencia en administración y estudios en psicopedagogía, adquirí habilidades valiosas en análisis, planificación y resolución de problemas complejos. Estas competencias, combinadas con mi pasión por la tecnología, me llevaron a descubrir la programación como mi verdadera vocación.
+          <p class="about__text">Busco especializarme en el desarrollo backend, creando aplicaciones escalables y seguras, y sigo aprendiendo constantemente nuevas herramientas y lenguajes que potencien mis proyectos.
+        </p>
+      </div>
+
+      <!-- Card 2: Qué estudio -->
+      <div class="about__card">
+        <h3 class="about__subtitle">Qué estudio</h3>
+        <p class="about__text">
+          Actualmente estoy cursando la <span class="highlight">Tecnicatura en Desarrollo de Software</span>, donde mi meta es profundizar en <span class="highlight">programación backend</span> y buenas prácticas para construir aplicaciones seguras y escalables. Además, he completado varios cursos de <span class="highlight">Java</span> (Educación IT, Codo a Codo) y desarrollo web (Henry), fortaleciendo mis conocimientos en bases de datos, APIs y arquitectura de software.
+        </p>
+         <p class="about__text">
+          Como interés personal, en un futuro me gustaría incursionar en el área de <span class="highlight">IA</span> y explorar cómo se relaciona con la <span class="highlight">educación y las neurociencias</span>, mis otras pasiones.
+        </p>
+      </div>
+
+      <!-- Card 3: Qué hago -->
+      <div class="about__card">
+        <h3 class="about__subtitle">Qué hago</h3>
+        <p class="about__text">
+          Como <span class="highlight">Desarrolladora de Software Junior</span>, mi objetivo es construir aplicaciones <span class="highlight">backend seguras y escalables</span>. </p>
+          <p class="about__text">Gracias a mi formación anterior y experiencia en administración, aporto una <span class="highlight">excelente capacidad de trabajo en equipo, comunicación y comprensión de necesidades</span>, cualidades que complementan mis habilidades técnicas y me permiten integrarme eficazmente en proyectos colaborativos.
+        </p>
+       
+      </div>
+
+    </div>
+  </div>
 
     <!-- Skills con iconos animados -->
     <div class="skills">
@@ -165,42 +205,118 @@ public class Portfolio {
 
 <section id="proyectos" class="section--projects">
   <div class="section__container">
-    <h2 class="section__title">Mis Proyectos</h2>
+    <h2 class="section__title">MIS PROYECTOS</h2>
     <div class="projects">
       <div class="project-item">
         <img src="projects/proyecto1.jpg" alt="Proyecto 1">
-        <h3>Proyecto 1</h3>
-        <p>Breve descripción del proyecto, tecnologías usadas y objetivos.</p>
+        <div class="project-text">
+          <h3>Book Finder</h3>
+          <p>Web de venta de Libros con carrito de compras. FrontEnd realizado con React y Material UI. Incluye integraciones como MercadoPago y Auth0, filtros para búsquedas de productos, paginado y JWT.</p>
+        </div>
       </div>
       <div class="project-item">
         <img src="projects/proyecto2.jpg" alt="Proyecto 2">
-        <h3>Proyecto 2</h3>
-        <p>Breve descripción del proyecto, tecnologías usadas y objetivos.</p>
+        <div class="project-text">
+          <h3>CRUD para administración</h3>
+          <p>Es el panel de administración de Book Finder, con acceso restringido. Al igual que el portal de ventas, tiene un BackEnd realizado con tecnologías como Sequelize, Postgres, Node Js y Express. Utiliza servicios de Cloudinary para almacenamiento de imágenes.</p>
+        </div>
       </div>
       <div class="project-item">
         <img src="projects/proyecto3.jpg" alt="Proyecto 3">
-        <h3>Proyecto 3</h3>
-        <p>Breve descripción del proyecto, tecnologías usadas y objetivos.</p>
+        <div class="project-text">
+          <h3>Literalura</h3>
+          <p>Literalura. Aplicación Java basada en Spring Boot que permite buscar y gestionar libros y autores utilizando una API externa (Gutendex). La aplicación utiliza una base de datos relacional para almacenar los libros y sus autores.</p>
+        </div>
       </div>
-      <!-- Más proyectos -->
+      <div class="project-item">
+        <img src="projects/proyecto4.jpg" alt="Proyecto 3">
+        <div class="project-text">
+          <h3>Encriptador Challenge</h3>
+          <p>Ejercicio de maquetado en HTML5 y CSS. La web incluye funciones en Javascript para encriptar y desencriptar textos ingresados por el usuario</p>
+        </div>
+      </div>
     </div>
   </div>
 </section>
 
 
-    <section id="contacto">
-        <h2>Contact Me</h2>
-        <form>
-            <input type="text" placeholder="Name" required>
-            <input type="email" placeholder="Email" required>
-            <textarea placeholder="Message" required></textarea>
-            <button type="submit">Send</button>
-        </form>
-    </section>
+<!--
+<section id="proyectos" class="section--projects">
+  <div class="section__container">
+    <h2 class="section__title">MIS PROYECTOS</h2>
+    <div class="projects">
+      <div class="project-item">
+        <img src="projects/proyecto1.jpg" alt="Proyecto 1">
+        <h3>Book Finder</h3>
+        <p>Book Finder. Web de venta de Libros con carrito de compras. FrontEnd realizado con React y Material UI. Incluye integraciones como MercadoPago y Auth0, filtros para búsquedas de productos, paginado y JWT.</p>
+      </div>
+      <div class="project-item">
+        <img src="projects/proyecto2.jpg" alt="Proyecto 2">
+        <h3>CRUD para administración</h3>
+        <p>Es el panel de administración de Book Finder, con acceso restringido. Al igual que el portal de ventas, tiene un BackEnd realizado con tecnologías como Sequelize, Postgres, Node Js y Express. Utiliza servicios de Cloudinary para almacenamiento de imágenes.</p>
+      </div>
+      <div class="project-item">
+        <img src="projects/proyecto3.jpg" alt="Proyecto 3">
+        <h3>Literalura</h3>
+        <p>Literalura. Aplicación Java basada en Spring Boot que permite buscar y gestionar libros y autores utilizando una API externa (Gutendex). La aplicación utiliza una base de datos relacional para almacenar los libros y sus autores.</p>
+      </div>
 
-    <footer>
-        <p>&copy; 2024 Your Name</p>
-    </footer>
+      -->
+      <!-- Más proyectos -->
+    </div>
+  </div>
+</section>
+
+<section id="contacto" class="section--contact">
+  <div class="section__container">
+    <h2 class="section__title">¿QUERÉS CONTACTARME?</h2>
+    
+    <ul class="contact__list">
+      <li>
+        <strong>Email:</strong> <a href="mailto:andrea@tuemail.com">andrea@tuemail.com</a>
+      </li>
+      <li>
+        <strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">Mi perfil</a>
+        <a href="https://www.linkedin.com/in/tu-perfil" target="_blank">
+  <i class="fab fa-linkedin"></i> LinkedIn
+</a>
+      </li>
+      <li>
+        <strong>GitHub:</strong> <a href="https://github.com/ACPurrinos" target="_blank">Mi GitHub</a>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+
+
+
+
+  <footer class="footer">
+  <div class="footer__container">
+    <p class="footer__text">© 2025 Andrea | Desarrolladora de Software</p>
+    <ul class="footer__socials">
+      <li>
+        <a href="mailto:andrea@tuemail.com" aria-label="Email">
+          <i class="fas fa-envelope"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </li>
+      <li>
+        <a href="https://github.com/ACPurrinos" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+</footer>
+
+
 
 
     

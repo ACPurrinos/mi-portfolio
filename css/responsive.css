@@ -1,0 +1,16 @@
+@media (max-width: 1200px) {
+  html { font-size: 59%; }
+}
+
+@media (max-width: 900px) {
+  html { font-size: 56%; }
+}
+
+@media (max-width: 768px) {
+  .heading-primary { font-size: 4.5rem; }
+  .heading-sec__sub { font-size: 1.8rem; }
+}
+
+@media (min-width: 1800px) {
+  html { font-size: 65%; }
+}

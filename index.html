@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+    <!--
+    <link rel="stylesheet" href="css/styles.css">
+    -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/typography.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+
+ <header class="header">
+  <div class="header__container">
+    <!-- LOGO -->
+    <div class="header__logo-container">
+      <h1 class="header__logo">&lt;MiPortfolio /&gt;</h1>
+    </div>
+
+    <!-- MENÚ DE ESCRITORIO -->
+    <nav class="header__nav">
+      <ul class="header__menu">
+        <li><a href="#inicio" class="header__menu-link">INICIO</a></li>
+        <li><a href="#sobre-mi" class="header__menu-link">SOBRE MÍ</a></li>
+        <li><a href="#proyectos" class="header__menu-link">PROYECTOS</a></li>
+        <li><a href="#contacto" class="header__menu-link">CONTACTO</a></li>
+      </ul>
+    </nav>
+
+    <!-- BOTÓN HAMBURGUESA -->
+    <div class="header__main-ham-menu-cont">
+      <!-- Icono hamburguesa -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="header__main-ham-menu" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+      </svg>
+
+      <!-- Icono cerrar -->
+      <svg xmlns="http://www.w3.org/2000/svg" class="header__main-ham-menu-close d-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </div>
+  </div>
+
+  <!-- MENÚ MÓVIL -->
+  <div class="header__sm-menu">
+    <ul class="header__sm-menu-list">
+      <li><a href="#inicio" class="header__sm-menu-link">INICIO</a></li>
+      <li><a href="#sobre-mi" class="header__sm-menu-link">SOBRE MI</a></li>
+      <li><a href="#proyectos" class="header__sm-menu-link">PROYECTOS</a></li>
+      <li><a href="#contacto" class="header__sm-menu-link">CONTACTO</a></li>
+    </ul>
+  </div>
+</header>
+
+<section id="inicio" class="hero hero--light">
+  <div class="hero__content">
+    <h1 class="hero__title">
+      <span class="typing">HOLA, SOY <span class="highlight">ANDREA!</span></span>
+      <span class="cursor"></span>
+    </h1>
+
+    <h3 class="hero__subtitle">Desarrolladora de Software Junior | BackEnd Enthusiast</h3>
+
+    <!-- Snippet de código animado -->
+    <pre class="hero__code"><code id="console-output"></code></pre>
+
+    <!-- Botón -->
+    <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+  </div>
+</section>
+
+
+
+
+
+
+
+<!--
+<section id="inicio" class="hero hero--light">
+  <div class="hero__content">
+    <pre class="hero__code">
+<code>
+public class Portfolio {
+    public static void main(String[] args) {
+        System.out.println("<span class="highlight">Hola, soy Andrea!</span>");
+    }
+}
+</code>
+    </pre>
+    <h3 class="hero__subtitle">Desarrolladora de Software Junior | BackEnd Enthusiast</h3>
+    <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+  </div>
+</section>
+
+-->
+
+
+<!--
+
+ <section id="inicio" class="hero hero--light">
+  <div class="hero__content">
+    <h1 class="hero__title">
+      System.out.println("<span class="highlight">Hola, soy Andrea!</span>");
+    </h1>
+    <h3 class="hero__subtitle">Desarrolladora de Software Junior | BackEnd Enthusiast</p>
+    <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+  </div>
+</section>
+-->
+
+
+   <section id="sobre-mi" class="section--about">
+  <div class="section__container">
+    <h2 class="section__title">SOBRE MÍ</h2>
+    <p class="section__text">
+      Soy <span class="highlight">Andrea</span>, una desarrolladora de software junior apasionada por el <span class="highlight">BackEnd</span>. Me encanta crear soluciones eficientes, aprender nuevas tecnologías y enfrentar retos de programación.
+    </p>
+
+    <!-- Skills con iconos animados -->
+    <div class="skills">
+      <div class="skill">
+        <img src="icons/java.svg" alt="Java" class="skill-icon">
+        <span class="skill-name">Java</span>
+      </div>
+      <div class="skill">
+        <img src="icons/spring.svg" alt="Spring Boot" class="skill-icon">
+        <span class="skill-name">Spring Boot</span>
+      </div>
+      <div class="skill">
+        <img src="icons/mysql.svg" alt="MySQL" class="skill-icon">
+        <span class="skill-name">MySQL</span>
+      </div>
+      <div class="skill">
+        <img src="icons/github.svg" alt="Git" class="skill-icon">
+        <span class="skill-name">GitHub</span>
+      </div>
+      <div class="skill">
+        <img src="icons/nodejs.svg" alt="Node.js" class="skill-icon">
+        <span class="skill-name">Node.js</span>
+      </div>
+      <div class="skill">
+        <img src="icons/javascript.svg" alt="JavaScript" class="skill-icon">
+        <span class="skill-name">JavaScript</span>
+      </div>
+      <div class="skill">
+        <img src="icons/html5.svg" alt="HTML5" class="skill-icon">
+        <span class="skill-name">HTML5</span>
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+
+<section id="proyectos" class="section--projects">
+  <div class="section__container">
+    <h2 class="section__title">Mis Proyectos</h2>
+    <div class="projects">
+      <div class="project-item">
+        <img src="projects/proyecto1.jpg" alt="Proyecto 1">
+        <h3>Proyecto 1</h3>
+        <p>Breve descripción del proyecto, tecnologías usadas y objetivos.</p>
+      </div>
+      <div class="project-item">
+        <img src="projects/proyecto2.jpg" alt="Proyecto 2">
+        <h3>Proyecto 2</h3>
+        <p>Breve descripción del proyecto, tecnologías usadas y objetivos.</p>
+      </div>
+      <div class="project-item">
+        <img src="projects/proyecto3.jpg" alt="Proyecto 3">
+        <h3>Proyecto 3</h3>
+        <p>Breve descripción del proyecto, tecnologías usadas y objetivos.</p>
+      </div>
+      <!-- Más proyectos -->
+    </div>
+  </div>
+</section>
+
+
+    <section id="contacto">
+        <h2>Contact Me</h2>
+        <form>
+            <input type="text" placeholder="Name" required>
+            <input type="email" placeholder="Email" required>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name</p>
+    </footer>
+
+
+    
+</body>
+</html>

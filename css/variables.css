@@ -1,0 +1,23 @@
+/* ========================================
+    VARIABLES GLOBALES
+   ======================================== */
+:root {
+  /* Colores */
+  --primary-color: #7843E9;
+  --text-color: #333;
+  --heading-color: #111;
+  --background-color: #fff;
+
+  /* Tipografía */
+  /*--font-base: 'Montserrat, sans-serif';*/
+  --font-base: 'Source Sans Pro', sans-serif;
+  --font-size-body: 1.5rem;
+  --font-size-h1: 6rem;
+  --font-size-h2: 3rem;
+  --font-size-h3: 1.7rem;
+  --line-height: 1.6;
+
+  /* Espaciados */
+  --container-width: 120rem;
+  --gap: 2.5rem;
+}

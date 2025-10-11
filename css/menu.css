@@ -1,0 +1,153 @@
+.header {
+  width: 100%;
+  background-color: var(--background-color);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.header__container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 1.5rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ========================================
+   LOGO MODERNO PORTFOLIO
+   ======================================== */
+
+
+   .header__logo {
+  font-size: var(--font-size-h2); /* o var(--font-size-h1) si querés más grande */
+  font-weight: 600;
+  font-family: 'Fira Code', 'Courier New', monospace;
+  /*font-family: 'Montserrat', sans-serif; /* tipografía moderna */
+  color: #2e0e73; /* color base sólido */
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s, -webkit-text-fill-color 0.3s;
+}
+
+/* Hover: aplica gradiente sutil y ligero zoom */
+.header__logo:hover {
+  background: linear-gradient(90deg, #2e0e73, #8d63ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transform: scale(1.05);
+}
+
+
+/*
+/* Animación de gradiente */
+/*@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}*/
+
+
+
+
+.header__nav .header__menu {
+  display: flex;
+  gap: var(--gap);
+}
+
+.header__menu-link {
+  font-size: var(--font-size-body);
+  color: var(--text-color);
+  font-weight: 500;
+  transition: color 0.3s;
+  font-family: var(--font-base);
+}
+
+.header__menu-link:hover {
+  color: var(--primary-color);
+}
+
+.header__main-ham-menu-cont {
+  display: none;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.header__main-ham-menu,
+.header__main-ham-menu-close {
+  width: 2.8rem;
+  height: 2.8rem;
+}
+
+.header__sm-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: var(--background-color);
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  transform: translateY(-20px);
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.35s ease;
+  z-index: 500;
+}
+
+.header__sm-menu--active {
+  transform: translateY(0);
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.header__sm-menu-list {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.header__sm-menu-link {
+  display: block;
+  width: 100%;
+  padding: 3rem 3rem;
+  text-align: right;
+  font-size: var(--font-size-body);
+  font-weight: 600;
+  color: var(--text-color);
+  text-decoration: none;
+  transition: background-color 0.3s, color 0.3s;
+  box-sizing: border-box;
+  font-family: var(--font-base);
+}
+
+.header__sm-menu-link:hover {
+  background-color: rgba(120, 67, 233, 0.1);
+  color: var(--primary-color);
+}
+
+/* Mostrar menú hamburguesa en móvil */
+@media (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+
+  .header__main-ham-menu-cont {
+    display: block;
+  }
+}
+
+
+@media (max-width: 480px) {
+  .header__sm-menu-link {
+    font-size: 1.2rem;
+    padding: 1.5rem 2rem;
+  }
+
+  .header__logo {
+    font-size: 1.8rem;
+  }
+}

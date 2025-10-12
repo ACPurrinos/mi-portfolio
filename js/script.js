@@ -92,21 +92,48 @@ const projectObserver = new IntersectionObserver(entries => {
 projectItems.forEach(item => projectObserver.observe(item));
 
 
+
 document.addEventListener('DOMContentLoaded', () => {
   const terminal = document.getElementById('terminal-msg');
   const msg = 'System.out.println("Si querés contactarme, podés encontrarme en mis redes aquí abajo:");';
-  let i = 0;
+  
+  // Crear el cursor parpadeante
+  const cursor = document.createElement('span');
+  cursor.classList.add('cursor');
+  cursor.textContent = '|';
+  terminal.parentNode.appendChild(cursor);
 
-  function typeEffect() {
-    if (i < msg.length) {
-      terminal.textContent = msg.substring(0, i + 1);
-      i++;
-      setTimeout(typeEffect, 50); // velocidad de tipeo
+  function typeEffect(element, message, speed = 50) {
+    let i = 0;
+    function type() {
+      if (i < message.length) {
+        element.textContent = message.substring(0, i + 1);
+        i++;
+        setTimeout(type, speed);
+      }
     }
+    type();
   }
 
-  typeEffect();
+  // Hacer que el cursor parpadee
+  setInterval(() => {
+    cursor.style.opacity = cursor.style.opacity === '0' ? '1' : '0';
+  }, 500);
+
+  // Observer para disparar la animación solo cuando la sección contacto sea visible
+  const contactoSection = document.getElementById('contacto');
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        typeEffect(terminal, msg);
+        observer.unobserve(contactoSection); // se ejecuta solo una vez
+      }
+    });
+  }, { threshold: 0.5 }); // 50% de la sección visible
+
+  observer.observe(contactoSection);
 });
+
 
 
 

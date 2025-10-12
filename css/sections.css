@@ -487,59 +487,76 @@
   padding: 6rem 2rem;
   min-height: 100vh;
   text-align: center;
-  background: #f7f5ff;
+  background: linear-gradient(135deg, #fdfbff 0%, #f5f2ff 100%);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  color: #333;
 }
 
-.section--contact .section__title {
+.contact__code {
+  background: #0a0a0a;
+  color: #00ff9c;
+  font-family: 'Fira Code', monospace;
+  padding: 1.5rem;
+  border-radius: 10px;
+  font-size: 0.95rem;
+  box-shadow: 0 0 15px rgba(0, 255, 156, 0.2);
+  min-height: 200px;
+  margin-top: 3rem;
+  margin: auto;
+  white-space: pre;
+  line-height: 1.4;
+  overflow-x: auto;
+  text-align: left;
+  max-width: 700px;
+  width: 90%;
+  
+}
+
+.contact__code::before {
+  content: '● ● ●';
+  display: block;
+  color: #ff5f56;
+  letter-spacing: 4px;
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+  opacity: 0.8;
+}
+
+
+
+.contact__code code {
+  display: block;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  
+}
+
+.loading-line::after {
+  content: "█";
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.section__title {
   font-family: 'Montserrat', sans-serif;
   font-size: 2.6rem;
   font-weight: 800;
   color: #120229;
-  margin-bottom: 2.5rem;
   text-align: center;
+  margin-bottom: 3rem;
   letter-spacing: 1px;
 }
 
-.contact__code {
-  font-family: 'Fira Code', monospace;
-  font-size: 1.4rem;
-  background: #1a1a1a;
-  color: #78e08f;
-  display: inline-block;
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  margin-bottom: 2rem;
-  overflow-x: auto;
-  text-align: left;
-  white-space: pre-wrap;
+.section__title i {
+  color: #7843E9;
+  margin-right: 10px;
 }
 
 
-
-.contact__text {
-  font-size: 1.2rem;
-  margin-bottom: 1.5rem;
-}
-
-.btn-primary {
-  display: inline-block;
-  padding: 1rem 2rem;
-  background: linear-gradient(90deg, #7843E9, #9b59b6);
-  color: #fff;
-  font-weight: 600;
-  border-radius: 6px;
-  text-decoration: none;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.btn-primary:hover {
-  transform: translateY(-3px);
-  box-shadow: 0 4px 15px rgba(120, 67, 233, 0.3);
-}
 
 /* RESPONSIVE */
 @media (max-width: 768px) {

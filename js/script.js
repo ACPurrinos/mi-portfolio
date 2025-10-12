@@ -135,6 +135,74 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+document.addEventListener("DOMContentLoaded", () => {
+  const contactoSection = document.querySelector("#contacto");
+  const apiSim = document.querySelector("#api-simulation code");
+
+  const lines = [
+    '> GET https://api.andrea.dev/contact',
+    '🛰️  Enviando solicitud...',
+    '✅  200 OK',
+    '',
+    '{',
+    '  "nombre": "Andrea Purriños",',
+    '  "rol": "Desarrolladora de Software",',
+    '  "contacto": {',
+    '    "email": "xxxxxxx@tuemail.com",',
+    '    "linkedin": "linkedin.com/in/xxxxxxxxxx",',
+    '    "github": "github.com/ACPurrinos"',
+    '  }',
+    '}',
+  
+    '> console.log("¡Gracias por visitar mi portfolio!")'
+  ];
+
+  function startApiAnimation() {
+    apiSim.textContent = ''; // limpia el contenido actual
+    let i = 0;
+
+    function typeLine() {
+      const line = lines[i];
+      let charIndex = 0;
+
+      function typeChar() {
+        apiSim.textContent += line[charIndex];
+        charIndex++;
+        if (charIndex < line.length) {
+          setTimeout(typeChar, 25); // velocidad por carácter
+        } else {
+          apiSim.textContent += '\n';
+          i++;
+          if (i < lines.length) {
+            setTimeout(typeLine, 80); // pausa entre líneas
+          }
+        }
+      }
+
+      typeChar();
+    }
+
+    typeLine();
+  }
+
+  // Detectar cuando la sección contacto entra al viewport
+  const observer = new IntersectionObserver(
+    (entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          startApiAnimation();
+          observer.unobserve(contactoSection);
+        }
+      });
+    },
+    { threshold: 0.5 }
+  );
+
+  observer.observe(contactoSection);
+});
+
+
+
 
 
 

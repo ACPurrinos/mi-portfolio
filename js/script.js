@@ -92,6 +92,20 @@ const projectObserver = new IntersectionObserver(entries => {
 projectItems.forEach(item => projectObserver.observe(item));
 
 
+const msg = 'System.out.println("Si querés contactarme, podés encontrarme en mis redes aquí abajo:");';
+const terminal = document.getElementById('terminal-msg');
+
+let i = 0;
+function typeEffect() {
+  if(i < msg.length){
+    terminal.textContent = msg.substring(0, i + 1);
+    i++;
+    setTimeout(typeEffect, 50);
+  }
+}
+typeEffect();
+
+
 
 
 

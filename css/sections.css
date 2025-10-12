@@ -479,16 +479,19 @@
 /* =======================================
    SECCIÓN CONTACTO
 ======================================= */
+/* =======================================
+   SECCIÓN CONTACTO - MENSAJE DE CIERRE
+======================================= */
 .section--contact {
   position: relative;
   padding: 6rem 2rem;
   min-height: 60vh;
   text-align: center;
-  color: #333;
-  background: linear-gradient(135deg, #f5f5f5, #e0e0e0);
+  background: #f7f5ff;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  color: #333;
 }
 
 .section--contact .section__title {
@@ -496,34 +499,63 @@
   font-size: 2.6rem;
   font-weight: 800;
   color: #120229;
+  margin-bottom: 2.5rem;
   text-align: center;
-  margin-bottom: 3rem;
   letter-spacing: 1px;
 }
 
-.contact__list {
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
-  max-width: 400px;
+.contact__code {
+  font-family: 'Fira Code', monospace;
+  font-size: 1.4rem;
+  background: #1a1a1a;
+  color: #78e08f;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 12px;
+  margin-bottom: 2rem;
+  overflow-x: auto;
   text-align: left;
+  white-space: pre-wrap;
 }
 
-.contact__list li {
+
+
+.contact__text {
   font-size: 1.2rem;
   margin-bottom: 1.5rem;
-  color: #333;
 }
 
-.contact__list li a {
-  color: #7843E9;
-  text-decoration: none;
+.btn-primary {
+  display: inline-block;
+  padding: 1rem 2rem;
+  background: linear-gradient(90deg, #7843E9, #9b59b6);
+  color: #fff;
   font-weight: 600;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.contact__list li a:hover {
-  text-decoration: underline;
+.btn-primary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 15px rgba(120, 67, 233, 0.3);
 }
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .section--contact .section__title {
+    font-size: 2rem;
+  }
+
+  .contact__code {
+    font-size: 1.1rem;
+  }
+
+  .contact__text {
+    font-size: 1rem;
+  }
+}
+
 
 .footer {
   background-color: #f7f5ff;

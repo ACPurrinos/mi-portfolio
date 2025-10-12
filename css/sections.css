@@ -67,6 +67,7 @@
   vertical-align: -0.15em;
   margin-left: 3px;
   animation: blink 1s step-end infinite;
+ 
 }
 
 @keyframes typing {
@@ -92,6 +93,7 @@
   border: 1px solid rgba(120, 67, 233, 0.15);
   box-shadow: 0 2px 8px rgba(120, 67, 233, 0.08);
   position: relative;
+  text-align: left;
 }
 
 .hero__code::after {
@@ -107,6 +109,7 @@
   font-size: var(--font-size-h3);
   margin-top: 1.5rem;
   color: #555;
+ 
 }
 
 /* === BOTÓN === */

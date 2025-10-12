@@ -104,7 +104,7 @@ document.addEventListener("DOMContentLoaded", () => {
     '> GET https://api.andrea.dev/contact',
     '🛰️  Enviando solicitud...',
     '✅  200 OK',
-    '',
+    
     '{',
     '  "nombre": "Andrea Purriños",',
     '  "rol": "Desarrolladora de Software",',

@@ -7,7 +7,7 @@
   align-items: center;
   justify-content: center;
   text-align: center;
-  padding: 0 2rem;
+  padding: 7rem 2rem;
   position: relative;
   color: #333;
   overflow: hidden;
@@ -100,7 +100,7 @@
   position: relative;
   text-align: left;
   max-width: 700px;
-  width: 90%;
+  
   justify-content: center;
   align-items: center;
  

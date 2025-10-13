@@ -43,7 +43,7 @@ logoContainer.addEventListener('click', () => {
 
 
 const codeLines = [
-  'System.out.println("Bienvenido a mi portfolio");',
+  'System.out.println("Bienvenido a mi portfolio.");',
   
 ];
 
@@ -107,15 +107,15 @@ document.addEventListener("DOMContentLoaded", () => {
     
     '{',
     '  "nombre": "Andrea Purriños",',
-    '  "rol": "Desarrolladora de Software",',
+    '  "rol": "Software Developer Jr",',
     '  "contacto": {',
     '    "email": "xxxxxxx@tuemail.com",',
-    '    "linkedin": "linkedin.com/in/xxxxxxxxxx",',
+    '    "linkedin": "linkedin.com/in/xxx",',
     '    "github": "github.com/ACPurrinos"',
-    '  }',
+    '  },',
+    '  "saludo": "¡Gracias por visitar mi portfolio!"',
     '}',
   
-    '> console.log("¡Gracias por visitar mi portfolio!")'
   ];
 
   function startApiAnimation() {

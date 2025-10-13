@@ -32,6 +32,7 @@
 .hero__content {
   position: relative;
   z-index: 1;
+  
 }
 
 /* === TÍTULO CON EFECTO DE TIPEO === */
@@ -46,6 +47,7 @@
   overflow: hidden;
   display: inline-block;
   border-right: none;
+ 
 }
 
 .hero__title .highlight {
@@ -88,7 +90,8 @@
   background: rgba(75,0,130,0.05);
   border-radius: 10px;
   padding: 1rem 1.5rem;
-  margin: 5rem 0 2rem 0;
+  margin: 7rem auto;
+
   white-space: pre;
   overflow: hidden;
   color: #4b0082;
@@ -96,6 +99,11 @@
   box-shadow: 0 2px 8px rgba(120, 67, 233, 0.08);
   position: relative;
   text-align: left;
+  max-width: 700px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+ 
 }
 
 .hero__code::after {

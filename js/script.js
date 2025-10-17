@@ -35,11 +35,31 @@ window.addEventListener('resize', () => {
   }
 });
 
+/*
+
 // Redirigir al hacer click en el logo
 const logoContainer = document.querySelector('.header__logo-container');
 logoContainer.addEventListener('click', () => {
   location.href = '/';
+});*/
+
+document.addEventListener('DOMContentLoaded', () => {
+  const logoContainer = document.querySelector('.header__logo-container');
+  const inicioSection = document.querySelector('#inicio');
+
+  if (logoContainer && inicioSection) {
+    logoContainer.addEventListener('click', (e) => {
+      e.preventDefault(); // Previene redirección si hay <a>
+      // Scroll instantáneo sin animación
+      inicioSection.scrollIntoView();
+    });
+  }
 });
+
+
+
+
+
 
 
 const codeLines = [

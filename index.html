@@ -1,143 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Andrea Purriños</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <link rel="icon" href="icons/favicon.ico" type="image/png">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Andrea Purriños</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="icon" href="icons/favicon.ico" type="image/png">
 
 
 
 
-    <!--
+  <!--
     <link rel="stylesheet" href="css/styles.css">
     -->
-    <link rel="stylesheet" href="css/variables.css">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/typography.css">
-    <link rel="stylesheet" href="css/layout.css">
-    <link rel="stylesheet" href="css/menu.css">
-    <link rel="stylesheet" href="css/sections.css">
-    <link rel="stylesheet" href="css/responsive.css">
-    <script defer src="js/script.js"></script>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/typography.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/sections.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <script defer src="js/script.js"></script>
 </head>
+
 <body>
 
- <header class="header">
-  <div class="header__container">
-    <!-- LOGO -->
-    <div class="header__logo-container">
-      <a href="/" class="header__logo-link"></a>
-    <!--<h1 class="header__logo">&lt;MiPortfolio /&gt;</h1>-->
-      <h1 class="header__logo">MiPortfolio</h1>
-      </a>
+  <header class="header">
+    <div class="header__container">
+      <!-- LOGO -->
+      <div class="header__logo-container">
+        <a href="/" class="header__logo-link"></a>
+        <!--<h1 class="header__logo">&lt;MiPortfolio /&gt;</h1>-->
+        <h1 class="header__logo">MiPortfolio</h1>
+        </a>
+      </div>
+
+      <!-- MENÚ DE ESCRITORIO -->
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li><a href="#inicio" class="header__menu-link">INICIO</a></li>
+          <li><a href="#sobre-mi" class="header__menu-link">SOBRE MÍ</a></li>
+          <li><a href="#proyectos" class="header__menu-link">PROYECTOS</a></li>
+          <li><a href="#contacto" class="header__menu-link">CONTACTO</a></li>
+        </ul>
+      </nav>
+
+      <!-- BOTÓN HAMBURGUESA -->
+      <div class="header__main-ham-menu-cont">
+        <!-- Icono hamburguesa -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="header__main-ham-menu" fill="none" viewBox="0 0 24 24"
+          stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+
+        <!-- Icono cerrar -->
+        <svg xmlns="http://www.w3.org/2000/svg" class="header__main-ham-menu-close d-none" fill="none"
+          viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+        </svg>
+      </div>
     </div>
 
-    <!-- MENÚ DE ESCRITORIO -->
-    <nav class="header__nav">
-      <ul class="header__menu">
-        <li><a href="#inicio" class="header__menu-link">INICIO</a></li>
-        <li><a href="#sobre-mi" class="header__menu-link">SOBRE MÍ</a></li>
-        <li><a href="#proyectos" class="header__menu-link">PROYECTOS</a></li>
-        <li><a href="#contacto" class="header__menu-link">CONTACTO</a></li>
+    <!-- MENÚ MÓVIL -->
+    <div class="header__sm-menu">
+      <ul class="header__sm-menu-list">
+        <li><a href="#inicio" class="header__sm-menu-link">INICIO</a></li>
+        <li><a href="#sobre-mi" class="header__sm-menu-link">SOBRE MI</a></li>
+        <li><a href="#proyectos" class="header__sm-menu-link">PROYECTOS</a></li>
+        <li><a href="#contacto" class="header__sm-menu-link">CONTACTO</a></li>
       </ul>
-    </nav>
-
-    <!-- BOTÓN HAMBURGUESA -->
-    <div class="header__main-ham-menu-cont">
-      <!-- Icono hamburguesa -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="header__main-ham-menu" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
-      </svg>
-
-      <!-- Icono cerrar -->
-      <svg xmlns="http://www.w3.org/2000/svg" class="header__main-ham-menu-close d-none" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
-        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12"/>
-      </svg>
     </div>
-  </div>
+  </header>
 
-  <!-- MENÚ MÓVIL -->
-  <div class="header__sm-menu">
-    <ul class="header__sm-menu-list">
-      <li><a href="#inicio" class="header__sm-menu-link">INICIO</a></li>
-      <li><a href="#sobre-mi" class="header__sm-menu-link">SOBRE MI</a></li>
-      <li><a href="#proyectos" class="header__sm-menu-link">PROYECTOS</a></li>
-      <li><a href="#contacto" class="header__sm-menu-link">CONTACTO</a></li>
-    </ul>
-  </div>
-</header>
+  <section id="inicio" class="hero hero--light">
+    <div class="hero__content">
+      <h1 class="hero__title">
+        <!-- <span class="typing">HOLA, SOY <span class="highlight">ANDREA PURRIÑOS</span></span>-->
+        <span>&lt;HOLA, SOY <span class="highlight">ANDREA PURRIÑOS</span><span></span> /&gt</span>
+        <!-- <span class="cursor"></span>-->
+      </h1>
 
-<section id="inicio" class="hero hero--light">
-  <div class="hero__content">
-    <h1 class="hero__title">
-     <!-- <span class="typing">HOLA, SOY <span class="highlight">ANDREA PURRIÑOS</span></span>-->
-      <span>&lt;HOLA, SOY <span class="highlight">ANDREA PURRIÑOS</span><span></span> /&gt</span>
-     <!-- <span class="cursor"></span>-->
-    </h1>
+      <h3 class="hero__subtitle">“Software developer | Back-End enthusiast”</h3>
 
-    <h3 class="hero__subtitle">“Software developer | Back-End enthusiast”</h3>
-
-    <!-- Snippet de código animado -->
-    <pre class="hero__code"><span>></span> <code id="console-output"></code><span>></span></pre>
-    
-
-    <!-- Botón -->
-    <a href="#proyectos" class="btn-primary">Ver proyectos</a>
-  </div>
-</section>
+      <!-- Snippet de código animado -->
+      <pre class="hero__code"><span>></span> <code id="console-output"></code><span>></span></pre>
 
 
-    <section id="sobre-mi" class="section--about">
-  <div class="section__container">
-    <h2 class="section__title">SOBRE MÍ</h2>
-
-    <div class="about__cards">
-      <!-- Card 1: Quién soy -->
-      <div class="about__card">
-        <h3 class="about__subtitle">Mi recorrido</h3>
-        <p class="about__text">
-  Tras varios años de experiencia en administración y áreas operativas, complementados con estudios en psicopedagogía -mi otra pasión-, desarrollé habilidades sólidas en análisis y resolución de problemas complejos. Estas competencias, junto con mi interés por la tecnología, me llevaron a descubrir la programación como vocación.
-</p>
-<p class="about__text">
-  Actualmente, busco especializarme en desarrollo backend, enfocándome en crear aplicaciones escalables y seguras. Además, mantengo un aprendizaje constante de nuevas herramientas y lenguajes para potenciar mis proyectos y crecer profesionalmente.
-</p>
-
-      </div>
-
-      <!-- Card 2: Qué estudio -->
-      <div class="about__card">
-        <h3 class="about__subtitle">Mis estudios</h3>
-       <p class="about__text">
-  <p class="about__text">
-  Actualmente curso la <span class="highlight">Tecnicatura en Desarrollo de Software</span>, con el objetivo de profundizar en programación backend, arquitectura de software y buenas prácticas para desarrollar aplicaciones seguras y escalables. Paralelamente, he completado diversos cursos de <span class="highlight">Java</span> (Educación IT, Codo a Codo, Oracle Next Education) y desarrollo web (Henry), fortaleciendo mis conocimientos en bases de datos y APIs.
-</p>
-<p class="about__text">
-  Soy muy curiosa, y me entusiasma seguir aprendiendo. A futuro, me interesa explorar áreas como la <span class="highlight">ciberseguridad</span> y la <span class="highlight">inteligencia artificial</span>, especialmente en su relación con otros campos que me apasionan, como la <span class="highlight">educación</span> y las <span class="highlight">neurociencias</span>.
-</p>
+      <!-- Botón -->
+      <a href="#proyectos" class="btn-primary">Ver proyectos</a>
+    </div>
+  </section>
 
 
-      </div>
+  <section id="sobre-mi" class="section--about">
+    <div class="section__container">
+      <h2 class="section__title">SOBRE MÍ</h2>
 
-      <!-- Card 3: Qué hago -->
-      <div class="about__card">
-        <h3 class="about__subtitle">¿Qué ofrezco?</h3>
-        <p class="about__text">
+      <div class="about__cards">
+        <!-- Card 1: Quién soy -->
+        <div class="about__card">
+          <h3 class="about__subtitle">Historia</h3>
           <p class="about__text">
-  Como Desarrolladora de Software Junior, mi objetivo es crear aplicaciones <span class="highlight">backend seguras, eficientes y escalables</span>.
-</p>
-<p class="about__text">
-  Mi formación previa y experiencia en administración me brindan una sólida <span class="highlight">capacidad para trabajar en equipo, comunicarme de forma efectiva y comprender necesidades del negocio</span>. Estas habilidades complementan mi perfil técnico y me permiten integrarme con facilidad en entornos colaborativos.
-</p>
+            Mi camino profesional comenzó en áreas administrativas y operativas, donde desarrollé una visión integral de los procesos de 
+            negocio. En paralelo, estudié psicopedagogía, lo que me permitió comprender los procesos de aprendizaje y cómo potenciar 
+            habilidades en otras personas.
+          </p>
+          <p class="about__text">
+            Esta combinación fortaleció mi capacidad para resolver problemas y me llevó a descubrir la programación como vocación. Actualmente me especializo en desarrollo backend, enfocándome en crear aplicaciones escalables y seguras. 
+          </p>
 
-       
+        </div>
+
+        <!-- Card 2: Qué estudio -->
+        <div class="about__card">
+          <h3 class="about__subtitle">Estudios</h3>
+         
+          <p class="about__text"> Actualmente curso la <span class="highlight">Tecnicatura en Desarrollo de Software</span>, con el objetivo de profundizar en programación backend, arquitectura de software y buenas prácticas para construir aplicaciones seguras y escalables. Paralelamente, completé cursos de Java (Educación IT, Codo a Codo, Oracle Next Education), desarrollo web (Henry) y fundamentos de computación en la nube (AWS Practitioner). </p>
+          <p class="about__text">Mantengo una formación continua en nuevas tecnologías, convencida de que la innovación y el crecimiento profesional son constantes.</p>
+
+
+        </div>
+
+        <!-- Card 3: Qué hago -->
+        <div class="about__card">
+          <h3 class="about__subtitle">Objetivos</h3>
+          <p class="about__text">
+          <p class="about__text">
+            Como Desarrolladora de Software Junior, mi objetivo es crear aplicaciones backend
+              seguras, eficientes y escalables.
+          </p>
+          <p class="about__text">
+            Mi formación previa y experiencia en administración me brindan una sólida <span class="highlight">capacidad
+              para trabajar en equipo, comunicarme de forma efectiva y comprender necesidades del negocio</span>. Estas
+            habilidades complementan mi perfil técnico y me permiten integrarme con facilidad en entornos colaborativos.
+          </p>
+
+
+        </div>
+
       </div>
-
     </div>
-  </div>
 
     <!-- Skills con iconos animados -->
     <div class="skills">
@@ -169,86 +174,104 @@
         <img src="icons/html5.svg" alt="HTML5" class="skill-icon">
         <span class="skill-name">HTML5</span>
       </div>
-      
+
     </div>
-  </div>
-</section>
+    </div>
+  </section>
 
 
-<section id="proyectos" class="section--projects">
-  <div class="section__container">
-    <h2 class="section__title">MIS PROYECTOS</h2>
-    <div class="projects">
-      <div class="project-item">
-        <img src="projects/proyecto1.jpg" alt="Proyecto 1">
-        <div class="project-text">
-          <h3>Book Finder</h3>
-          <p>Portal de venta de libros con carrito de compras, desarrollado colaborativamente en un bootcamp de desarrollo web. FrontEnd realizado con React y Material UI. Incluye integraciones como MercadoPago y Auth0, filtros de búsqueda, paginado y autenticación segura mediante JWT.</p>
+  <section id="proyectos" class="section--projects">
+    <div class="section__container">
+      <h2 class="section__title">MIS PROYECTOS</h2>
+      <div class="projects">
+        <div class="project-item">
+          <img src="projects/proyecto1.jpg" alt="Proyecto 1">
+          <div class="project-text">
+            <h3>Book Finder</h3>
+            <p>Portal de venta de libros con carrito de compras, desarrollado colaborativamente en el bootcamp de Henry.
+              FrontEnd realizado con React y Material UI. Incluye integraciones como MercadoPago y Auth0, filtros de
+              búsqueda, paginado y autenticación segura.</p>
 
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="projects/proyecto2.jpg" alt="Proyecto 2">
+          <div class="project-text">
+            <h3>CRUD para administración</h3>
+            <p>Panel de administración de Book Finder con acceso restringido. Su BackEnd fue desarrollado con
+              tecnologías como Node.js, Express, Sequelize y Postgres, garantizando un manejo eficiente de los datos.
+              Además, utiliza Cloudinary para el almacenamiento de imágenes.</p>
+
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="projects/proyecto3.jpg" alt="Proyecto 3">
+          <div class="project-text">
+            <h3>Literalura</h3>
+            <p>Aplicación Java basada en Spring Boot que permite buscar y gestionar libros y autores utilizando una API
+              externa (Gutendex). La aplicación utiliza una base de datos relacional para almacenar los libros y sus
+              autores.</p>
+          </div>
+        </div>
+        <div class="project-item">
+          <img src="projects/proyecto4.jpg" alt="Proyecto 4">
+          <div class="project-text">
+            <h3>Encriptador Challenge</h3>
+            <p>Ejercicio de maquetado en HTML5 y CSS. La web incluye funciones en Javascript para encriptar y
+              desencriptar textos ingresados por el usuario</p>
+          </div>
+        </div>
+        <a href="https://acpurrinos.github.io/mi-cv-web/" target="_blank" rel="noopener noreferrer"
+          class="project-item-link">
+          <div class="project-item">
+            <img src="projects/proyecto5.jpg" alt="Proyecto 5">
+            <div class="project-text">
+              <h3>Mi CV Web</h3>
+              <p>Es mi CV en versión Web. Clickear para ver en ventana nueva.</p>
+            </div>
+          </div>
+        </a>
+        <div class="project-item">
+          <img src="projects/proyecto6.jpg" alt="Proyecto 6">
+          <div class="project-text">
+            <h3>Front Moovies</h3>
+            <p>Proyecto final para la materia Frontend en el marco de la carrera Tecnicatura Superior en Desarrollo de
+              Software. El mismo consiste en una aplicacón de streaming de películas y series realizada con HTML, CSS y
+              JavaScript consumiendo la API de TheMoviedb.org. También se utilizó mockApi para simular la gestión de
+              autenticación de usuarios y guardar series y películas favoritas en perfil del cliente.</p>
+          </div>
         </div>
       </div>
-      <div class="project-item">
-        <img src="projects/proyecto2.jpg" alt="Proyecto 2">
-        <div class="project-text">
-          <h3>CRUD para administración</h3>
-          <p>Panel de administración de Book Finder con acceso restringido. Su BackEnd fue desarrollado con tecnologías como Node.js, Express, Sequelize y Postgres, garantizando un manejo eficiente de los datos. Además, utiliza Cloudinary para el almacenamiento de imágenes.</p>
-
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="projects/proyecto3.jpg" alt="Proyecto 3">
-        <div class="project-text">
-          <h3>Literalura</h3>
-          <p>Aplicación Java basada en Spring Boot que permite buscar y gestionar libros y autores utilizando una API externa (Gutendex). La aplicación utiliza una base de datos relacional para almacenar los libros y sus autores.</p>
-        </div>
-      </div>
-      <div class="project-item">
-        <img src="projects/proyecto4.jpg" alt="Proyecto 4">
-        <div class="project-text">
-          <h3>Encriptador Challenge</h3>
-          <p>Ejercicio de maquetado en HTML5 y CSS. La web incluye funciones en Javascript para encriptar y desencriptar textos ingresados por el usuario</p>
-        </div>
-      </div>
-      <a href="https://acpurrinos.github.io/mi-cv-web/" target="_blank" rel="noopener noreferrer" class="project-item-link">
-  <div class="project-item">
-    <img src="projects/proyecto5.jpg" alt="Proyecto 5">
-    <div class="project-text">
-      <h3>Mi CV Web</h3>
-      <p>Es mi CV en versión Web. Clickear para ver en ventana nueva.</p>
     </div>
+  </section>
+
+
+  <!-- Más proyectos -->
   </div>
-</a>
-    </div>
   </div>
-</section>
-
-
-      <!-- Más proyectos -->
-    </div>
-  </div>
-</section>
+  </section>
 
 
 
 
-<section id="contacto" class="section--contact">
-  <div class="section__container">
-    
-   <!-- <h2 class="section__title">
+  <section id="contacto" class="section--contact">
+    <div class="section__container">
+
+      <!-- <h2 class="section__title">
   <i class="fas fa-terminal"></i> ¿CÓMO CONTACTARME?
 </h2>-->
- <h2 class="section__title">
-   ¿CÓMO CONTACTARME?
-</h2>
+      <h2 class="section__title">
+        ¿CÓMO CONTACTARME?
+      </h2>
 
-    <pre class="contact__code" id="api-simulation">
+      <pre class="contact__code" id="api-simulation">
 <code>
 &gt; GET https://api.andrea.dev/contact
 <span class="loading-line"></span>
 </code>
     </pre>
-  </div>
-</section>
+    </div>
+  </section>
 
 
 
@@ -258,31 +281,32 @@
 
 
   <footer class="footer">
-  <div class="footer__container">
-    <p class="footer__text">© 2025 Andrea Purriños | Software Development</p>
-    <ul class="footer__socials">
-      <li>
-        <a href="mailto:andrea@tuemail.com" aria-label="Email">
-          <i class="fas fa-envelope"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn">
-          <i class="fab fa-linkedin"></i>
-        </a>
-      </li>
-      <li>
-        <a href="https://github.com/ACPurrinos" target="_blank" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-      </li>
-    </ul>
-  </div>
-</footer>
+    <div class="footer__container">
+      <p class="footer__text">© 2025 Andrea Purriños | Software Development</p>
+      <ul class="footer__socials">
+        <li>
+          <a href="mailto:andrea@tuemail.com" aria-label="Email">
+            <i class="fas fa-envelope"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/tu-perfil" target="_blank" aria-label="LinkedIn">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/ACPurrinos" target="_blank" aria-label="GitHub">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
 
 
 
 
-    
+
 </body>
+
 </html>

@@ -64,6 +64,7 @@
 
   /*color:var(--heading-color);*/
   color: #7843E9;
+
   font-weight: 700;
 }
 
@@ -142,7 +143,7 @@
   margin-top: 3rem;
   padding: 1rem 2.5rem;
   background: linear-gradient(90deg, #7843E9, #9b59b6);
-  background: #440372;;
+  background: #440372;
   color: #fff;
   font-weight: 600;
   border-radius: 6px;
@@ -227,7 +228,7 @@
 
 .about__subtitle {
   font-size: 1.6rem;
-  color: #4b0082;
+  color:#120229;
   margin-bottom: 1.2rem;
   font-weight: 700;
 }
@@ -239,7 +240,7 @@
 }
 
 .about__text .highlight {
-  color: #7843e9;
+  color: #340a45;
   font-weight: 700;
 }
 
@@ -619,7 +620,7 @@
 }
 
 .footer__socials a {
-  color: #4b0082;
+  color: #151217;
   font-size: 1.8rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }

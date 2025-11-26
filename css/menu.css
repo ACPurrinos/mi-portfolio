@@ -23,7 +23,7 @@
 
 
    .header__logo {
-  font-size: var(--font-size-h2); /* o var(--font-size-h1) si querés más grande */
+  font-size: var(--font-size-h2); 
   font-weight: 600;
   font-family: 'Fira Code', 'Courier New', monospace;
   /*font-family: 'Montserrat', sans-serif; /* tipografía moderna */
@@ -32,7 +32,7 @@
   transition: transform 0.3s, background-color 0.3s, -webkit-text-fill-color 0.3s;
 }
 
-/* Hover: aplica gradiente sutil y ligero zoom */
+
 .header__logo:hover {
   background: linear-gradient(90deg, #2e0e73, #8d63ff);
   -webkit-background-clip: text;

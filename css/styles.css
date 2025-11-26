@@ -1,5 +1,5 @@
 /* ========================================
-   1️ RESET MODERNO GLOBAL
+   RESET 
    ======================================== */
 *, *::before, *::after {
   box-sizing: border-box;
@@ -38,7 +38,7 @@ p {
 }
 
 /* ========================================
-   3️ ENLACES Y LISTAS
+   ENLACES Y LISTAS
    ======================================== */
 a {
   text-decoration: none;
@@ -60,7 +60,7 @@ ol {
 }
 
 /* ========================================
-   4️ IMÁGENES Y MEDIOS
+   IMÁGENES Y MEDIOS
    ======================================== */
 img, picture, video, canvas, svg {
   display: block;
@@ -68,8 +68,8 @@ img, picture, video, canvas, svg {
   height: auto;
 }
 
-/* ========================================
-   5️ FORMULARIOS Y BOTONES
+/* =======================================
+   FORMULARIOS Y BOTONES
    ======================================== */
 input, button, textarea, select {
   font: inherit;
@@ -102,7 +102,7 @@ textarea {
 }
 
 /* ========================================
-   7️ BOTONES BASE
+   BOTONES BASE
    ======================================== */
 .btn {
   background: #7843E9;
@@ -122,7 +122,7 @@ textarea {
 }
 
 /* ========================================
-   8️ ENCABEZADOS PERSONALIZADOS
+   ENCABEZADOS PERSONALIZADOS
    ======================================== */
 .heading-primary {
   font-size: 6rem;
@@ -168,7 +168,7 @@ textarea {
 }
 
 /* ========================================
-   9️ HEADER Y MENÚ HAMBURGUESA
+   HEADER Y MENÚ HAMBURGUESA
    ======================================== */
 .header {
   width: 100%;
@@ -251,8 +251,8 @@ textarea {
 .header__sm-menu-list {
   display: flex;
   flex-direction: column;
-  align-items: stretch; /* ocupa todo el ancho */
-  padding: 0; /* eliminamos padding superior/inferior extra */
+  align-items: stretch; 
+  padding: 0; 
   margin: 0;
   /*row-gap: 2rem; /* espacio uniforme entre enlaces */
   width: 100%;
@@ -261,15 +261,15 @@ textarea {
 /* ENLACES */
 .header__sm-menu-link {
   display: block;
-  width: 100%; /* ocupa todo el ancho del contenedor */
-  padding: 2rem 2rem; /* altura uniforme de cada renglón */
-  text-align: right; /* texto alineado a la derecha */
+  width: 100%; 
+  padding: 2rem 2rem; 
+  text-align: right; 
   font-size: 1.5rem;
   font-weight: 600;
   color: #333;
   text-decoration: none;
   transition: background-color 0.3s, color 0.3s;
-  box-sizing: border-box; /* asegura que el padding no afecte ancho */
+  box-sizing: border-box; 
 }
 
 /* HOVER */
@@ -318,7 +318,7 @@ textarea {
 }
 
 /* ========================================
-   10️⃣ MEDIA QUERIES PARA TIPOGRAFÍA
+   MEDIA QUERIES PARA TIPOGRAFÍA
    ======================================== */
 @media (max-width: 1200px) {
   html { font-size: 59%; }
